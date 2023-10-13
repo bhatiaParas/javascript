@@ -50,3 +50,5 @@ const myfunction=function(){
 console.log(typeof heroes);                    //typeof----------->object
 console.log(typeof myobj);                    //typeof----------->object
 console.log(typeof myfunction);                    //typeof--------->function
+
+//stack(PRIMITIVE),heap(NON-PRIMITIVE)
