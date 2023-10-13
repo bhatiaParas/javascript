@@ -52,3 +52,24 @@ console.log(typeof myobj);                    //typeof----------->object
 console.log(typeof myfunction);                    //typeof--------->function
 
 //stack(PRIMITIVE),heap(NON-PRIMITIVE)
+
+ //example of stack:
+ let myyoutubechannel="ParasBhatia";
+ let anothername=myyoutubechannel;
+ anothername="bhatiasaab";
+ console.log(myyoutubechannel);
+ console.log(anothername);
+
+
+//  example of heap:
+let userone={
+    email:"Thunder@gmail.com",
+    upi:"upi@sbl",
+}
+let usertwo=userone;
+usertwo.email="ParasBhatia@gmail.com";
+console.log(userone.email);
+console.log(usertwo.email);
+
+//stack me hamesha copy jati ha
+//heap me hmesha reference jata ha
