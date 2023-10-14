@@ -32,6 +32,8 @@ console.log(id === anotherId);
 
 //IMPORTANT
 //SYMBOL agar likh dete ha to different behave karega variables ke liye,
+// == me data type ko change kar deta ha
+// === me data type ko check karta ha
 
 
 
