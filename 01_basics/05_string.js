@@ -11,6 +11,7 @@ console.log(`hello, my name is ${name} and my repocount is ${repocount}`);//More
 
 
 const gamename= new String("Paras-Bhatia");
+console.log(gamename);//--->[String: 'Paras-Bhatia']
 console.log(gamename[0]);  //----------->P
 console.log(gamename.__proto__);//------->{}
 console.log(gamename.length);//---------->5
