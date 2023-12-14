@@ -70,8 +70,8 @@ let userone={
 }
 let usertwo=userone;
 usertwo.email="ParasBhatia@gmail.com";
-console.log(userone.email);
-console.log(usertwo.email);
+console.log(userone.email);      // ParasBhatia@gmail.com
+console.log(usertwo.email);      // ParasBhatia@gmail.com
 
 //stack me hamesha copy jati ha
 //heap me hmesha reference jata ha
