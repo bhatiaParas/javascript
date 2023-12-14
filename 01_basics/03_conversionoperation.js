@@ -8,7 +8,7 @@ let valueInNumber=Number(score);
 
 let isloggedIn="";
 let booleanId= Boolean(isloggedIn);
-// console.log(booleanId)
+// console.log(booleanId)  //--->false
 
 
 
