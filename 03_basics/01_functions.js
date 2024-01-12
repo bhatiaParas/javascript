@@ -6,7 +6,7 @@ console.log("A")
 console.log("S")
 }
 // saymyname-----> YE REFERENCE HA
-// saymyname()//--------------->Ye execution hota ha
+saymyname()//--------------->Ye execution hota ha
 
 function calculatecartprice(var1,var2,var3,...num1){
     return num1;
