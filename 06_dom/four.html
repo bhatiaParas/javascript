@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+        
+    </ul>
+</body>
+ <script>
+    function addlanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML=`${langName}`;
+        document.querySelector('.language').appendChild(li)
+    }
+    addlanguage("python")
+    addlanguage('c++')
+
+    /*ye method problem create karta ha kuki abi humare pas bus ek hi ha tubhi yeh chal raha ha...par jub hmare pas 100000 items hongi to yeh problem create karega...kuki har bar tree traverse kar raha ha..*/
+
+
+              /*or*/
+
+
+
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        const text=document.createTextNode(langName);
+        li.appendChild(text);
+        document.querySelector('.language').appendChild(li)
+    }
+
+//Ye wala method mostly use hoga
+
+
+addOptiLanguage('golang');
+
+                 // Edit-->isme hume python ko remove karna ha Mojo se 
+
+
+
+    const secondLang = document.querySelector("li:nth-child(2)");
+    // secondLang.innerHTML = "Mojo"
+    // ye wala jada optimize nhi ha..jum next method dekhenge
+    
+
+                //   or
+ 
+  const newLi = document.createElement('li')
+  newLi.textContent = "Mojo";
+  secondLang.replaceWith(newLi);
+
+
+                        //   Edit--->Isme hume javascript ko remove karna ha typescript se 
+ 
+
+const firstLang = document.querySelector("li:nth-child(1)");
+console.log(firstLang);
+
+
+// Ab hum alag approach dekhenge change karna ka 
+
+firstLang.outerHTML = '<li>Typescript</li>';
+
+
+                                   // Edit--->ab hum golang ko remove karenge
+
+
+                                                     //remove
+
+
+const lastlang = document.querySelector('li:last-child');
+
+lastlang.remove();
+
+ </script>
+</html>
