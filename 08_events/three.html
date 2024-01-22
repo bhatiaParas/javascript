@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur javascript</h1>
+
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+
+    <script>
+    //   setInterval(() => {
+    //     console.log("Paras",Date.now())// Date.now() se hmesha alag alag time milega
+    //   }, 3000);
+
+
+
+    // jum isme third parameter bi de sakte ha ..hum abi isme string denge "hi"...isme 3 sec baad hume hi 123553225 time milta jayega
+
+//  const IntervalId = setInterval((str) => {
+//         console.log(str,Date.now())// Date.now() se hmesha alag alag time milega
+//       }, 3000,"hi");
+      
+      
+      //Agar hum isko rokna chahte ha to clearInterval lagana padega 
+
+    //   clearInterval(IntervalId);
+
+
+//ab hume start button pe click staart ho jayega and stop karte hi ruk jayega
+      document.querySelector('#start').addEventListener('click',function(){
+        const IntervalId =   setInterval(() => {
+        console.log(Date.now())// Date.now() se hmesha alag alag time milega
+      }, 2000,);
+      
+      
+      document.querySelector('#stop').addEventListener('click',function(){
+          clearInterval(IntervalId);
+          console.log("stopped");
+        })
+    })
+        </script>
+</body>
+</html>
