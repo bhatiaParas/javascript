@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+
+    <button id="stop">Stop</button>
+
+
+    <script>
+       setTimeout(function(){
+        console.log("Paras");//ye two second baad print hoga
+       },2000)
+
+
+
+    //    setInterval me ye 2 sec baad baar baar print karta jayega 
+
+    // ab hum heading ko change karenge
+    // document.querySelector('h1').innerHTML = 'Best Js Series';
+
+// ab hum 2 sec baad heading ko change karenge
+
+
+  const ChangeMe = setTimeout(() => {
+        document.querySelector('h1').innerHTML = 'Best Js Series';
+       }, 2000);
+
+// ab hum agar settime out ko rokna chahte ha to clearTimeout karenge
+
+
+// clearTimeout(ChangeMe);...par hum isko aise nhi karenge...hum isko event pe lagayenge....
+
+
+//jub hum stop button pe click karenge to vo stop ho jayyega
+document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(ChangeMe);
+    console.log("STOPPED");
+})
+
+
+
+
+    </script>
+</body>
+</html>
