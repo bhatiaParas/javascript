@@ -19,3 +19,6 @@ window.addEventListener('keydown',function(e){  //learn---->keydown
  </div>`
   
 })
+
+
+//javascript asynchronous ha...aage theory google ya chatgpt se nikal loo.....
